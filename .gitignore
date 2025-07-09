@@ -1,15 +1,12 @@
  
-# Ignore compiled classes
 *.class
-
-# Ignore logs
 *.log
-
-# Ignore build and deployment folders
-/build/
-/target/
-
-# Ignore IDE-specific folders
-.idea/
+*.jar
+*.war
+*.ear
 *.iml
-.vscode/
+target/
+build/
+out/
+.idea/
+*.db
