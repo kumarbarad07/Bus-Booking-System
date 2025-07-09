@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    /* border: 2px solid red;    */     
+}
+
+body {
+    background-color: #FFFFFF;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+img,
+video {
+    object-fit: cover;
+}
+
+.geologica {
+    font-family: "Geologica", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+}
+
+.navbarlogo {
+    width: 100px;
+}
+
+.nav-link:hover {
+    color: #FBAB05 !important;
+}
+
+.gradient-custom {
+    background: #9D05EF;
+    background: -webkit-linear-gradient(to right, rgba(125, 50, 204, 0.9), rgba(51, 1, 158, 0.9));
+    background: linear-gradient(to right, rgba(173, 35, 207, 0.9), rgba(37, 51, 245, 0.9));
+}
+
+.hero-section {
+    background: linear-gradient(to right, rgba(14, 48, 99, 0.9), rgba(29, 39, 182, 0.9)), url("../Images/Illustration/the-road-in-the-city-e1679026670267.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 850px;
+}
+
+.charter-text {
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.get-start {
+    background-color: #FBAB05;
+}
+
+.get-start:hover {
+    background-color: #d605be;
+    color: #FFFFFF;
+}
+
+.body-bg {
+    background-color: #FFFFFF;
+}
+
+.c-bus img {
+    width: 100%;
+}
+
+.gradient-custom1 {
+    background: #9709e4;
+
+    background: -webkit-linear-gradient(to right, #2D1A89, #9607E9);
+    background: linear-gradient(to right, #2D1A89, #9607E9);
+}
+
+.callnow {
+    height: 14rem;
+}
+
+.booking-box {
+    margin-top: -100px;
+}
+
+/* .gradient-custom2 {
+    background: #f69517;
+    background: linear-gradient(to right, #db8102, #f9e506);
+} */
+
+.group-transportation {
+    background: linear-gradient(rgba(8, 48, 109, 0.7), rgba(49, 32, 93, 0.7)), url("../Images/Illustration/touristic-buses.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 650px;
+}
+
+.riding-safety {
+    background: linear-gradient(rgba(8, 48, 109, 0.7), rgba(49, 32, 93, 0.7)), url(../Images/Illustration/young-woman-outdoor-waiting-bus-stop.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 650px;
+}
+
+.row {
+    --bs-gutter-x: 0.2rem;
+}
+
+.step {
+    color: #181E76;
+}
+
+.gradient-custom2 {
+    background: linear-gradient(to right, #4324dd, #d605be);
+}
+
+.steps:hover {
+    background: linear-gradient(to right, #4324dd, #d605be);
+    color: #FFFFFF;
+    margin-top: -15px;
+    transition: ease-in;
+    transition-duration: 500ms;
+}
+
+.steps-p:hover {
+    color: #FBAB05;
+}
+
+.footer-section {
+    background: linear-gradient(rgba(20, 31, 187, 0.8), rgba(12, 3, 33, 0.9)), url(../Images/Illustration/bus-lane-yellow-sign-with-arrow-e1679026697912.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 2rem;
+    height: 600px;
+}
+
+.footer-logo {
+    width: 150px;
+}
+
+.footer-list {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.footer-list:hover {
+    color: #ff9f06;
+}
+
+@media (min-width:768px) {
+    .charter-text {
+        font-size: 52px;
+    }
+
+    .hero-section {
+        height: 1000px;
+    }
+
+    .footer-section {
+        height: 500px;
+    }
+}
+
+@media (min-width:1240px) {
+    .hero-section {
+        height: 900px;
+    }
+
+    .c-bus {
+        overflow: hidden;
+    }
+
+    .c-bus img {
+        width: 70vw;
+    }
+
+    .charter-text {
+        font-size: 68px;
+        /* line-height: 55px; */
+    }
+
+    .h-text {
+        padding-left: 80px;
+    }
+
+    .callnow {
+        height: 16rem;
+    }
+
+    .footer-section {
+        height: 300px;
+    }
+}

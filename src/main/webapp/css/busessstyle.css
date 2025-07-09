@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    /* border: 2px solid red;    */
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+img,
+video {
+    object-fit: cover;
+}
+
+.geologica {
+    font-family: "Geologica", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+}
+
+.navbarlogo {
+    width: 100px;
+}
+
+.nav-link:hover {
+    color: #FBAB05 !important;
+}
+
+.gradient-custom {
+    background: #9D05EF;
+    
+    background: linear-gradient(to right, rgba(173, 35, 207, 0.9), rgba(37, 51, 245, 0.9));
+}
+
+.bus-quote {
+    color:  #181E76;
+}

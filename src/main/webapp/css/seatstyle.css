@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  /* border: 2px solid red;    */
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+img,
+video {
+  object-fit: cover;
+}
+
+body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        .seats-container {
+        max-width: 700px;
+        }
+
+        .bus-card {
+            background: rgba(255, 255, 255, 0.95);
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+            padding: 30px;
+            margin-top: 50px;
+        }
+
+        .card-body h5 {
+            text-align: center;
+            font-size: 26px;
+            margin-bottom: 25px;
+            color: #333;
+        }
+
+        .seat-selection {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+            gap: 10px;
+            justify-items: center;
+            margin-bottom: 20px;
+        }
+
+        .seat-selection label {
+            position: relative;
+            border-radius: 8px;
+            width: 100%;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+
+        .seat-selection input[type="checkbox"] {
+            display: none;
+        }
+
+        .seat-selection span {
+            display: inline-block;
+            width: 100%;
+            padding: 10px 0;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            color: black;
+        }
+
+        /* Booked (disabled) */
+        .seat-selection input[type="checkbox"]:disabled + span {
+            background-color: red;
+            cursor: not-allowed;
+        }
+
+        /* Available */
+        .seat-selection input[type="checkbox"]:not(:disabled) + span {
+            background-color: white;
+        }
+
+        /* Hover on available */
+        .seat-selection input[type="checkbox"]:not(:disabled):hover + span {
+            border: 4px solid #28a745;
+        }
+
+        /* Selected */
+        .seat-selection input[type="checkbox"]:not(:disabled):checked + span {
+            background-color: #28a745;
+        }
+
+         .btn:hover {
+            background-color: #00cc00;
+        }      
+
+        .alert {
+            margin-top: 20px;
+        }
+
+        @media (max-width: 576px) {
+            .bus-card {
+                padding: 40px;
+                margin: 20px 10px;
+            }
+
+            .card-body h5 {
+                font-size: 22px;
+            }
+
+            .seat-selection {
+                grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+            }
+        }
+        
+        @media (min-width: 1024px) {
+        .bus-card {
+        padding: 100px;
+        margin: 70px 50px;
+        }
+        }
